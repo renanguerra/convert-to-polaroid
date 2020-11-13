@@ -28,6 +28,7 @@ body{
 }
 
 .main{
+  padding: 20px;
   text-align: center;
   margin: auto;
   margin-top: 10px;
@@ -37,4 +38,18 @@ body{
   box-shadow: 0 0 100px rgba(0 , 0 , 0 , 0.1);
   border-radius: 8px;
 
+}
+.text2{
+  margin-bottom: 20px;
+}
+input[type='file'] {
+  display: none;
+}
+.labelInput {
+  background-color: #3498db;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  margin: 10px;
+  padding: 6px 20px
 }
