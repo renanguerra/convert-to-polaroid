@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import Polaroid from '../components/index'
+
 import './App.css';
 
 function Home() {
@@ -12,6 +13,7 @@ function Home() {
         setImage(file);
     }
 };
+
 
   return (
     <div className="App">
@@ -27,17 +29,17 @@ function Home() {
             </div>
           </div>
 
-      <div className="main">
+      <div className="main" id='main'>
         <h2 className="text1">Como funciona?</h2>
         <h3 className="text2">Basta Selecionar sua imagem no campo abaixo.</h3>
         <label className='labelInput' htmlFor="myImage"> Selecionar uma imagem.</label>
         <input onChange={(e) => handleChange(e)} type="file" id="myImage" accept="image/*" />
 
-        <div className="polaroid-hidden">
+        <div id="polaroid-hidden">
           <Polaroid img={image}/>
         </div>
 
-        <span className='labelInput'>Download</span>
+
 
       </div>
 
