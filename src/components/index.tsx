@@ -11,7 +11,7 @@ interface PolaroidProps{
 function DownloadImage(){
     domtoimage.toBlob(document.getElementById('polaroid')as HTMLElement)
     .then(function (blob) {
-        saveAs(blob, 'my-node.png');
+        saveAs(blob, 'myImage.png');
     });
   }
 
