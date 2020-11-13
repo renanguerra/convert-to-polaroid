@@ -5,11 +5,6 @@ import './App.css';
 function Home() {
   const [image,setImage] = useState(String);
 
-  function Convert(){
-    const imagem : string = (document.getElementById('myimage') as HTMLInputElement).value;
-
-    setImage(imagem);
-  }
   return (
     <div className="App">
 
