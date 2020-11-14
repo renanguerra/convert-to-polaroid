@@ -8,6 +8,21 @@ interface PolaroidProps{
     img: string
 }
 
+interface PolaroidShow{
+    show: boolean
+    img: string
+}
+
+const renderCard: React.FC<PolaroidShow> = (props)=> {
+    const showCard = props.show;
+    if (showCard){
+        return <Polaroid img={props.img}/>
+    }
+    else {
+        return <p></p>
+    }
+}
+
 function DownloadImage(){
     domtoimage.toBlob(document.getElementById('polaroid')as HTMLElement)
     .then(function (blob) {
@@ -26,4 +41,4 @@ const Polaroid: React.FC<PolaroidProps> = (props) => {
     )
 }
 
-export default Polaroid;
+export default renderCard;

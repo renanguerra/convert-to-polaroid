@@ -5,12 +5,14 @@ import './App.css';
 
 function Home() {
   const [image,setImage] = useState(String);
+  const [show,setShow] = useState(Boolean);
 
 
   const handleChange = function loadFile(event:any) {
     if (event.target.files.length > 0) {
         const file = URL.createObjectURL(event.target.files[0]);
         setImage(file);
+        setShow(true)
     }
 };
 
@@ -36,7 +38,7 @@ function Home() {
         <input onChange={(e) => handleChange(e)} type="file" id="myImage" accept="image/*" />
 
         <div id="polaroid-hidden">
-          <Polaroid img={image}/>
+          <Polaroid show={show} img={image}/>
         </div>
 
 
