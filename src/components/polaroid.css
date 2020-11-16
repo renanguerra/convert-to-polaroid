@@ -42,18 +42,16 @@
         height:410px;
     }
  }
-@media (min-width:600px) { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ }
-@media (min-width:801px) { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
-@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
 
 @media (min-width:1281px) { 
 .main-polaroid{
-    margin-left: 30vw;
+    margin-left: 27vw;
     margin-top: 40px;
 }
+
 .polaroid{
     float: left;
-    padding: 10px 10px 35px 10px;
+    padding: 15px 15px 50px 15px;
     background: #eee;
     border: 1px solid #fff;
     margin-bottom: 15px;
