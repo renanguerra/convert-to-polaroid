@@ -27,7 +27,6 @@ function Home() {
 
             <div className="right">
               <a id='link' href="/contato">Contato</a>
-              <a id='link' href="/donate">Donate</a>
             </div>
           </div>
 
