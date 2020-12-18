@@ -1,5 +1,9 @@
 import React, {useState} from 'react';
-import Polaroid from '../components/index'
+import Polaroid from '../../components/index'
+
+
+import Header from '../../components/header/index'
+
 
 import './App.css';
 
@@ -20,15 +24,7 @@ function Home() {
   return (
     <div className="App">
 
-          <div className='header'>
-            <div className="left">
-                  <h2>Convert-to-Polaroid</h2>
-            </div>
-
-            <div className="right">
-              <a id='link' href="/contato">Contato</a>
-            </div>
-          </div>
+      <Header/>
 
       <div className="main" id='main'>
         <h2 className="text1">Como funciona?</h2>

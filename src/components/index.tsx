@@ -36,7 +36,10 @@ const Polaroid: React.FC<PolaroidProps> = (props) => {
             <div className='polaroid' id='polaroid'>
                 <img className='img' src={props.img} alt='Sua imagem vai aqui'/>
             </div>
+
             <span onClick={() => DownloadImage()} className='labelInput'>Download</span>
+          
+            
         </div>
     )
 }
