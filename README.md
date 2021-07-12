@@ -1,5 +1,7 @@
 ## 💻 Projeto
 
+OBS: Infelizmente a lib que uso pra gerar a imagem não funciona direito no safari, tente em outro navegador!
+
 Projeto desenvolvido para ajudar amantes de fotos polaroid, uma opção simples e grátis para transfomar suas fotos no modelo polaroid.
 
 Link para o projeto no Netlify: https://convert-to-polaroid.netlify.app/
